@@ -39,7 +39,7 @@
         getDatabase()
 
         function renderProducts(data){
-            //productListContainer.innerHTML =""
+            productListContainer.innerHTML =""
             Object.entries(data).forEach(item =>{
                 console.log(item)
                 renderProductTags(item[0], item[1])
