@@ -21,7 +21,7 @@
         <hr></hr>
         <h3>Your Cart:</h3>
         <ul id ="cart"></ul>
-        <p id = "total">Current total: 0kr</p>
+        <p id = "total">Current total: 0 kr</p>
         <hr></hr>
     </div>
     <div id ="productList"></div>
@@ -129,7 +129,7 @@
             createCartItem(item)
             const price = (parseInt(item.price))
             currentTotal += price
-            total.innerHTML = `Current total: ${currentTotal}kr`
+            total.innerHTML = `Current total: ${currentTotal} kr`
        }
        function createCartItem(item){
             const cart = document.getElementById("cart")
