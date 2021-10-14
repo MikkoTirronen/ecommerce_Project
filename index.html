@@ -21,8 +21,8 @@
         <hr></hr>
         <h3>Your Cart:</h3>
         <ul id ="cart"></ul>
-        <hr></hr>
         <p id = "total">Current total: 0kr</p>
+        <hr></hr>
     </div>
     <div id ="productList"></div>
     <script>
@@ -32,7 +32,6 @@
         let currentTotal = 0
 
         function getDatabase(){
-            
             fetch(url)
             .then(res => res.json())
             .then(data =>{
@@ -87,6 +86,9 @@
             productImage.alt = item.images[0].alt
             productImage.height = 200
             productImage.width = 300
+            // productImage.addEventListener('click', () =>{
+            //     addToCart(item)
+            // })
             return productImage
         } 
         function addDescription(item){
